@@ -1,6 +1,9 @@
 local M = {
   "nvim-telescope/telescope.nvim",
-  dependencies = { { "nvim-telescope/telescope-fzf-native.nvim", build = "make", lazy = true } },
+  dependencies = {
+    { "nvim-telescope/telescope-fzf-native.nvim", build = "make", lazy = true },
+    { "nvim-telescope/telescope-live-grep-args.nvim", version = "^1.0.0" },
+  },
 }
 
 function M.config()
@@ -15,10 +18,15 @@ function M.config()
     ["<leader>fh"] = { "<cmd>Telescope help_tags<cr>", "Help" },
     ["<leader>fl"] = { "<cmd>Telescope resume<cr>", "Last Search" },
     ["<leader>fr"] = { "<cmd>Telescope oldfiles<cr>", "Recent File" },
+    ["<leader>fg"] = {
+      "<cmd> lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>",
+      "Find Text Args",
+    },
   }
 
   local icons = require "user.icons"
   local actions = require "telescope.actions"
+  local lga_actions = require "telescope-live-grep-args.actions"
 
   require("telescope").setup {
     defaults = {
@@ -120,6 +128,16 @@ function M.config()
         override_generic_sorter = true, -- override the generic sorter
         override_file_sorter = true, -- override the file sorter
         case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+      },
+      live_grep_args = {
+        auto_quoting = true, -- enable/disable auto-quoting
+        -- define mappings, e.g.
+        mappings = { -- extend mappings
+          i = {
+            ["<C-k>"] = lga_actions.quote_prompt(),
+            ["<C-i>"] = lga_actions.quote_prompt { postfix = " --iglob " },
+          },
+        },
       },
     },
   }
