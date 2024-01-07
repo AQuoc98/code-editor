@@ -22,8 +22,8 @@ function M.config()
       n = { "<cmd>$tabnew<cr>", "New Empty Tab" },
       N = { "<cmd>tabnew %<cr>", "New Tab" },
       o = { "<cmd>tabonly<cr>", "Only" },
-      h = { "<cmd>-tabmove<cr>", "Move Left" },
-      l = { "<cmd>+tabmove<cr>", "Move Right" },
+      h = { "<cmd>tabprev<cr>", "Move Left" },
+      l = { "<cmd>tabnext<cr>", "Move Right" },
     },
     T = { name = "Treesitter" },
   }
