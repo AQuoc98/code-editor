@@ -64,7 +64,8 @@ function M.config()
     "jsonls",
     "tailwindcss",
     "eslint",
-    "rust_analyzer"
+    "rust_analyzer",
+    "dartls"
   }
 
   local default_diagnostic_config = {
