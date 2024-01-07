@@ -78,9 +78,11 @@ function M.config()
         elseif luasnip.expand_or_jumpable() then
           luasnip.expand_or_jump()
         elseif check_backspace() then
-          fallback()
+          -- fallback()
+          require("neotab").tabout()
         else
-          fallback()
+          -- fallback()
+          require("neotab").tabout()
         end
       end, {
         "i",
@@ -134,7 +136,7 @@ function M.config()
       behavior = cmp.ConfirmBehavior.Replace,
       select = false,
     },
-   window = {
+    window = {
       completion = {
         border = "rounded",
         scrollbar = false,
