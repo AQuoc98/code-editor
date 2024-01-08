@@ -64,7 +64,6 @@ function M.config()
     "jsonls",
     "tailwindcss",
     "eslint",
-    "rust_analyzer",
     "dartls"
   }
 

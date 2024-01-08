@@ -10,7 +10,6 @@ function M.config()
   local wk = require "which-key"
   wk.register {
     ["<leader>bb"] = { "<cmd>Telescope buffers previewer=false<cr>", "Find" },
-    ["<leader>fb"] = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
     ["<leader>fc"] = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
     ["<leader>ff"] = { "<cmd>Telescope find_files<cr>", "Find files" },
     ["<leader>ft"] = { "<cmd>Telescope live_grep<cr>", "Find Text" },
@@ -131,12 +130,6 @@ function M.config()
       live_grep_args = {
         auto_quoting = true, -- enable/disable auto-quoting
         -- define mappings, e.g.
-        mappings = { -- extend mappings
-          i = {
-            ["<C-k>"] = lga_actions.quote_prompt(),
-            ["<C-i>"] = lga_actions.quote_prompt { postfix = " --iglob " },
-          },
-        },
       },
     },
   }
