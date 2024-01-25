@@ -69,6 +69,8 @@ My best code editor
 | `sh` , `sj` , `sk` , `sl`                                    | move between windown          |
 | `ctrl-w-left` , `ctrl-w-right` , `ctrl-w-up` , `ctrl-w-down` | resize windown                |
 | `ctrl-j`                                                     | go to next diagnostic         |
+| `leader-r`                                                   | replace hex with HSL          |
+| `leader-i`                                                   | toggle inlay hints            |
 
 ## Plugin
 
@@ -106,3 +108,11 @@ My best code editor
 ### Colorscheme
 
 - [solarized-osaka](https://github.com/craftzdog/solarized-osaka.nvim)
+
+### Comment
+
+- [danymat/neogen](https://github.com/danymat/neogen) - A better annotation generator. Supports multiple languages and annotation conventions
+
+| Keymap    | Description    |
+| :-------- | :------------- |
+| leader-cc | neogen comment |
