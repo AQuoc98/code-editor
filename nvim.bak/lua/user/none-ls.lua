@@ -15,9 +15,9 @@ function M.config()
   null_ls.setup {
     debug = true,
     sources = {
+      formatting.prettier,
       formatting.stylua,
       formatting.black,
-      formatting.prettier,
       diagnostics.flake8,
       completion.spell,
     },
