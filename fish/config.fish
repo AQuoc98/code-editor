@@ -19,17 +19,35 @@ if status is-interactive
     alias lla "ll -A"
     alias g git
     command -qv nvim && alias vim nvim
+
+    function _fzf_change_directory
+        fzf | perl -pe 's/([ ()])/\\\\$1/g' | read foo
+        if [ $foo ]
+            builtin cd $foo
+            commandline -r ''
+            commandline -f repaint
+        else
+            commandline ''
+        end
+    end
+
+    function fzf_change_directory
+        begin
+            echo $HOME/.config
+            ls -ad */ | perl -pe "s#^#$PWD/#" | grep -v \.git
+        end | sed -e 's/\/$//' | awk '!a[$0]++' | _fzf_change_directory $argv
+    end
+
+
+    function fish_user_key_bindings
+        # fzf
+        bind \cf fzf_change_directory
+
+        # prevent iterm2 from closing when typing Ctrl-D (EOF)
+        bind \cd delete-char
+    end
+
+    # fzf plugin
+    fzf_configure_bindings --directory=\co
+
 end
-
-function fish_user_key_bindings
-    # fzf
-    bind \cf fzf_change_directory
-
-    # vim-like
-    bind \cl forward-char
-
-    # prevent iterm2 from closing when typing Ctrl-D (EOF)
-    bind \cd delete-char
-end
-
-fzf_configure_bindings --directory=\co
