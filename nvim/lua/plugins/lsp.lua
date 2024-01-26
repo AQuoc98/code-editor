@@ -1,5 +1,4 @@
 return {
-  -- tools
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
@@ -15,8 +14,6 @@ return {
       })
     end,
   },
-
-  -- lsp servers
   {
     "neovim/nvim-lspconfig",
     opts = {
