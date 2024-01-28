@@ -1,5 +1,20 @@
 return {
   {
+    "princejoogie/dir-telescope.nvim",
+    -- telescope.nvim is a required dependency
+    dependencies = { "nvim-telescope/telescope.nvim" },
+    opts = {
+
+      hidden = true,
+      no_ignore = false,
+      show_preview = true,
+    },
+    keys = {
+      { "<leader>fd", "<cmd>Telescope dir live_grep<cr>" },
+      { "<leader>pd", "<cmd> Telescope dir find_files<cr>" },
+    },
+  },
+  {
     "telescope.nvim",
     dependencies = {
       {

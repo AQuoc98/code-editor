@@ -1,6 +1,7 @@
 # Terminal
 
 - ITerm2
+- [Terminal Commands](https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce)
 
 # Tmux
 
@@ -15,7 +16,6 @@
 | `o`                  | open current directory         |
 | `e`                  | kill all pane but current pane |
 | `k`, `j`, `h`, `l`   | pane switching                 |
-| `e`                  | kill all pane but current pane |
 | `g`                  | open lazygit                   |
 
 # Shell
@@ -116,12 +116,15 @@
 - live grep: [ripgrep](https://github.com/BurntSushi/ripgrep)
 - find files: [fd](https://github.com/sharkdp/fd)
 - [ nvim-telescope/telescope.nvim ](https://github.com/nvim-telescope/telescope.nvim) - Telescope.nvim is a highly extendable fuzzy finder over lists. Built on the latest awesome features from Neovim core. Telescope is centered around modularity, allowing for easy customization
+- [princejoogie/dir-telescope.nvim](https://github.com/princejoogie/dir-telescope.nvim) - Search in specific dir
 
 | Keymap      | Description                                                                                                                                                                                                      |
 | :---------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `leader-fP` | find plugin file                                                                                                                                                                                                 |
 | `;f`        | lists files in your current working directory                                                                                                                                                                    |
+| `leader-pd` | lists files in your specific directory                                                                                                                                                                           |
 | `;r`        | search for a string in your current working directory and get results live as you type                                                                                                                           |
+| `leader-fd` | search for a string in your specific directory and get results live as you type                                                                                                                                  |
 | `\\\\`      | lists open buffers                                                                                                                                                                                               |
 | `;t`        | lists available help tags and opens a new window with the relevant help info on <cr>                                                                                                                             |
 | `;;`        | resume the previous telescope picker                                                                                                                                                                             |
@@ -209,6 +212,7 @@
 - [ rcarriga/nvim-notify ](https://github.com/rcarriga/nvim-notify) - A fancy, configurable, notification manager
 - [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim) - Improve the built-in vim.ui interfaces with telescope, fzf, etc
 - [ folke/noice.nvim ](https://github.com/folke/noice.nvim) - Highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu
+- [akinsho/flutter-tools.nvim](https://github.com/akinsho/flutter-tools.nvim) - Tools to help create flutter apps in neovim using the native lsp
 
 # Icon
 

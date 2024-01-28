@@ -98,7 +98,7 @@ return {
     opts = {
       plugins = {
         gitsigns = true,
-        tmux = true,
+        tmux = false,
         kitty = { enabled = false, font = "+2" },
       },
     },
