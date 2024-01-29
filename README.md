@@ -118,19 +118,21 @@
 - [ nvim-telescope/telescope.nvim ](https://github.com/nvim-telescope/telescope.nvim) - Telescope.nvim is a highly extendable fuzzy finder over lists. Built on the latest awesome features from Neovim core. Telescope is centered around modularity, allowing for easy customization
 - [princejoogie/dir-telescope.nvim](https://github.com/princejoogie/dir-telescope.nvim) - Search in specific dir
 
-| Keymap      | Description                                                                                                                                                                                                      |
-| :---------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `leader-fP` | find plugin file                                                                                                                                                                                                 |
-| `;f`        | lists files in your current working directory                                                                                                                                                                    |
-| `leader-pd` | lists files in your specific directory                                                                                                                                                                           |
-| `;r`        | search for a string in your current working directory and get results live as you type                                                                                                                           |
-| `leader-fd` | search for a string in your specific directory and get results live as you type                                                                                                                                  |
-| `\\\\`      | lists open buffers                                                                                                                                                                                               |
-| `;t`        | lists available help tags and opens a new window with the relevant help info on <cr>                                                                                                                             |
-| `;;`        | resume the previous telescope picker                                                                                                                                                                             |
-| `;e`        | lists Diagnostics for all open buffers or a specific buffer                                                                                                                                                      |
-| `;s`        | lists Function names, variables, from Treesitter                                                                                                                                                                 |
-| `sf`        | open File Browser with the path of the current buffer. <br> `N`-create, `h`-go to parent dir, `/`-start insert, `ctrl-u`-selection previous, `ctrl-d`-selection next, `pageup`-scroll up, `pagedown`-scroll down |
+| Keymap                       | Description                                                                                                                                                                             |
+| :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `leader-fP`                  | find plugin file                                                                                                                                                                        |
+| `;f`                         | lists files in your current working directory                                                                                                                                           |
+| `leader-pd`                  | lists files in your specific directory                                                                                                                                                  |
+| `;r`                         | search for a string in your current working directory and get results live as you type                                                                                                  |
+| `leader-fd`                  | search for a string in your specific directory and get results live as you type                                                                                                         |
+| `\\\\`                       | lists open buffers                                                                                                                                                                      |
+| `;t`                         | lists available help tags and opens a new window with the relevant help info on <cr>                                                                                                    |
+| `;;`                         | resume the previous telescope picker                                                                                                                                                    |
+| `;e`                         | lists Diagnostics for all open buffers or a specific buffer                                                                                                                             |
+| `;s`                         | lists Function names, variables, from Treesitter                                                                                                                                        |
+| `sf`                         | open File Browser with the path of the current buffer                                                                                                                                   |
+| `actions for telescope`      | `ctrl-w` - Send all selected items to qflist                                                                                                                                            |
+| `actions for telescope file` | `N` - create <br> `h` - go to parent dir <br> `/` - start insert mode <br> `ctrl-u` - selection previous, `ctrl-d` - selection next <br> `pageup` - scroll up, `pagedown` - scroll down |
 
 # Colorscheme
 

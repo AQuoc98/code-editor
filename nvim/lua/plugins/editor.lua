@@ -129,7 +129,9 @@ return {
         sorting_strategy = "ascending",
         winblend = 0,
         mappings = {
-          n = {},
+          n = {
+            ["<C-w>"] = actions.send_selected_to_qflist + actions.open_qflist,
+          },
         },
       })
       opts.pickers = {
