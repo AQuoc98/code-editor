@@ -9,14 +9,14 @@
 - Load config by `tmux source-file path-of-tmux.conf`
 - Custom keymap
 
-| Keymap               | Description                    |
-| :------------------- | :----------------------------- |
-| `ctrl-b` -> `ctrl-t` | prefix                         |
-| `r`                  | reload setting                 |
-| `o`                  | open current directory         |
-| `e`                  | kill all pane but current pane |
-| `k`, `j`, `h`, `l`   | pane switching                 |
-| `g`                  | open lazygit                   |
+| Keymap             | Description                    |
+| :----------------- | :----------------------------- |
+| `ctrl-b`           | prefix                         |
+| `r`                | reload setting                 |
+| `o`                | open current directory         |
+| `e`                | kill all pane but current pane |
+| `k`, `j`, `h`, `l` | pane switching                 |
+| `g`                | open lazygit                   |
 
 # Shell
 
